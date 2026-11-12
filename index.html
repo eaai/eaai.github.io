@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EAAI: The Symposium on Educational Advances in Artificial Intelligence</title>
+  <meta name="description" content="A short description of this page.">
+  <style>
+    /* ---------- Colors (edit these to restyle the whole page) ---------- */
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --surface: #f3f5f7;
+      --text: #1d2329;
+      --muted: #5c6670;
+      --border: #dde2e6;
+      --accent: #2a6f8f;
+      --max-width: 46rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161a1d;
+        --surface: #1f2428;
+        --text: #e6e9ec;
+        --muted: #9aa4ad;
+        --border: #30373d;
+        --accent: #7cc0dc;
+      }
+    }
+
+    /* ---------- Base ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
+    img, video { max-width: 100%; height: auto; display: block; }
+    a { color: var(--accent); }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    h1, h2, h3 { line-height: 1.25; margin: 2rem 0 0.75rem; }
+    h1 { font-size: 2.25rem; margin-top: 0; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+    p, ul, ol { margin: 0 0 1rem; }
+
+    .wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
+
+    /* ---------- Header ---------- */
+    header { border-bottom: 1px solid var(--border); }
+    header .wrap {
+      display: flex; flex-wrap: wrap; align-items: center;
+      justify-content: space-between; gap: 0.75rem; padding-top: 1rem; padding-bottom: 1rem;
+    }
+    .site-name { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1.25rem; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--text); }
+
+    /* ---------- Main ---------- */
+    main { padding: 3rem 0; }
+    .lead { font-size: 1.2rem; color: var(--muted); }
+    .box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1.25rem; margin: 1.5rem 0;
+    }
+    .table-scroll { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+
+    /* ---------- Footer ---------- */
+    footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+    footer .wrap { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+    /* ---------- Small screens ---------- */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.75rem; }
+      main { padding: 2rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a class="site-name" href="#">EAAI</a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <!-- <li><a href="#">About</a></li> -->
+          <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Page heading</h1>
+      <p class="lead">The Symposium on Educational Advances in Artificial Intelligence</p>
+
+      <h2>Current Home</h2>
+      <p><a href="https://eaai-conf.github.io/">https://eaai-conf.github.io/</a></p>
+
+      <!-- <div class="box">
+        <p>Optional highlighted box for notes or callouts.</p>
+      </div> -->
+
+      <!-- Optional image:
+      <img src="your-image.jpg" alt="Describe the image">
+      -->
+
+      <!-- Optional table (scrolls sideways on small screens):
+      <div class="table-scroll">
+        <table>
+          <tr><th>Column</th><th>Column</th></tr>
+          <tr><td>Cell</td><td>Cell</td></tr>
+        </table>
+      </div>
+      -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Sponsored by the <a href="http://www.aaai.org/">Association for the Advancement of Artificial Intelligence</a>
+    </div>
+  </footer>
+
+</body>
+</html>
